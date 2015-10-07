@@ -28,37 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.btnStart = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lblHelloWorld
+            // btnStart
             // 
-            this.lblHelloWorld.AutoSize = true;
-            this.lblHelloWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHelloWorld.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lblHelloWorld.Location = new System.Drawing.Point(50, 42);
-            this.lblHelloWorld.Name = "lblHelloWorld";
-            this.lblHelloWorld.Size = new System.Drawing.Size(176, 25);
-            this.lblHelloWorld.TabIndex = 0;
-            this.lblHelloWorld.Text = "HELLO WORLD";
-            this.lblHelloWorld.Click += new System.EventHandler(this.label1_Click);
+            this.btnStart.Location = new System.Drawing.Point(12, 12);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(260, 94);
+            this.btnStart.TabIndex = 0;
+            this.btnStart.Text = "Click for a surprise";
+            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // frmMainFormHello
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 118);
-            this.Controls.Add(this.lblHelloWorld);
+            this.Controls.Add(this.btnStart);
             this.Name = "frmMainFormHello";
             this.Text = "Hello World";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 
